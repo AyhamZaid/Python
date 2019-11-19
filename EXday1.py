@@ -14,7 +14,7 @@ Created on Tue Nov 19 12:49:58 2019
 # 
 # #Ex2
 # print("--------------------------------EX2")
-# print("OrnageAcademy","OrnageAcademy","OrnageAcademy","OrnageAcademy","OrnageAcademy","OrnageAcademy","OrnageAcademy","OrnageAcademy","OrnageAcademy","OrnageAcademy","OrnageAcademy","OrnageAcademy","OrnageAcademy","OrnageAcademy","OrnageAcademy","OrnageAcademy","OrnageAcademy","OrnageAcademy","OrnageAcademy","OrnageAcademy" ,sep='\n')
+# print("OrnageAcademy\n"*20)
 # 
 # #Ex3
 # print("--------------------------------EX3")
