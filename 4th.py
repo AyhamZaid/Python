@@ -103,8 +103,8 @@
 # print ("The min element of the list is : ",end="")
 # print (functools.reduce(lambda a,b : a if a < b else b,lis)) 
 # =============================================================================
-
-numbers = [1,2,3]
-letters= ['a','b','c']
-results = list(zip(numbers, letters))
-print(results)
+#EX15
+#numbers = [1,2,3]
+#letters= ['a','b','c']
+#results = list(zip(numbers, letters))
+#print(results)
