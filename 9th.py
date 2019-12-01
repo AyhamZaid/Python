@@ -70,12 +70,12 @@ img2 = Image.open("2.jpeg").resize(img1.size)
 Image.blend(img1,img2,alpha).show()
 blurred = im.filter(ImageFilter.BLUR)
 img.rotate(90).save('new.png')
-img1 = Image.open('deadpool.jpeg')
-img2 = Image.open('2.jpeg').resize(img1.size)
-mask = Image.open('mask_tril_01.jpg')
-mask = mask.resize(img1.size)
-Image.composite(img1, img2, mask).save(
-    "Image_composite_11.jpg")
+
+import numpy as np
+data = np.tril(np.ones((256, 256)) * 255)
+mask = Image.new("L", (256, 256))
+mask.putdata(data.flatten().tolist())
+mask.save("mask_tril_100.jpg")
 
 
 
