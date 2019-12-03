@@ -56,7 +56,12 @@ def openChild2():
     c = Toplevel(root)
     c.title("child 2")
     c.geometry("400x160+230+130")
-    txt = scrolledtext.ScrolledText(c,width=40,height=10)
+    scrollbar = Scrollbar(c)
+    txt = scrolledtext.ScrolledText(c,width=30,height=10)
+    mylist = Listbox(c, yscrollcommand = scrollbar.set )
+    for line in range(100):
+        mylist.insert(END, "This is line number " + str(line))
+    mylist.pack( side = LEFT, fill = BOTH )
     txt.grid(column=0,row=0)
 
 root = Tk()
