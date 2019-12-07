@@ -30,7 +30,7 @@ conn.execute('''CREATE TABLE IF NOT EXISTS Employees
  
 print("Table created")
 
-def fun():
+def record():
     print("EmployeeNumber: ",     eNumber.get())
     print("EmployeeName: ",       eName.get())
     print("EmployeeGender: ",     eGender.get())
@@ -69,7 +69,7 @@ def CreateEmp():
     Entry(c,textvariable=eDpt).grid(row=6,column=1)
     EmployeeSalary=Label(c,text="EmployeeSalary").grid(row=7,column=0)
     Entry(c,textvariable=eSalary).grid(row=7,column=1)
-    submit=Button(c,text="Submit",command=fun).grid(row=8,column=0)
+    submit=Button(c,text="Submit",command=record).grid(row=8,column=0)
     submit=Button(c,text="Close",command= root.destroy).grid(row=8,column=1)
     
 def ShowData():
