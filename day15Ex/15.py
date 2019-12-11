@@ -34,6 +34,5 @@ def view():
         return redirect(url_for("success",name = name, age = age, address = address, nationalety = nationalety))
 
 
-
 if __name__ == "__main__":
     app.run()
