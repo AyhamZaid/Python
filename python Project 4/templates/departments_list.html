@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+            <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+</style>
+  </head>
+  <body>
+      <ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="/login">Login</a></li>
+  <li><a href="/departmentslist">departmentslist</a></li>
+  <li><a href="/adddepartment">adddepartment</a></li>
+      </ul>
+    <table border="2">
+      <tr>
+        <th>Department ID</th>
+        <th>Department Name</th>
+        <th>Department Location ID</th>
+        <th>Department Info</th>
+      </tr>
+      {% for i in data %}
+      <tr>
+        <td>{{i[0]}}</td>
+        <td>{{i[1]}}</td>
+        <td>{{i[2]}}</td>
+        <td>
+          <form action="/viewemployees" method="POST">
+            <input type="hidden" name="info" value="{{i[0]}}" />
+            <input type="submit" value="Info" />
+          </form>
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+
+    <p><a href="/">Back</a></p>
+  </body>
+</html>
