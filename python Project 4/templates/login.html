@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
       <link href="static/main.css" rel="stylesheet" type="text/css" media="all">
-    <title>Document</title>
+    <title>Project 4</title>
   </head>
   <style>
+      body{
+              background-image:url(https://cdn.dodowallpaper.com/full/519/building-wallpapers-8.jpg);
+
+      }
       body,
 input,
 textarea,
@@ -35,7 +39,7 @@ h1 {
 .box {
   margin: 20px auto;
   width: 310px;
-  height: 260px;
+  height: 200px;
   -webkit-border-radius: 8px/7px;
   -moz-border-radius: 8px/7px;
   border-radius: 8px/7px;
@@ -46,9 +50,10 @@ h1 {
   border: solid 1px grey;
 }
 input{
-  margin-top: 15px;
+  margin-top: 35px;
   margin-left: 25%;
   margin-right:25%;
+  padding:2%;
 }
 ul {
   list-style-type: none;
@@ -82,7 +87,7 @@ li a:hover:not(.active) {
     {{msg}}
     <p>{{name}} {{msg}}</p>
     <ul>
-  <li><a class="active" href="#home">Home</a></li>
+  <li><a class="active" href="/">Home</a></li>
   <li><a href="/login">Login</a></li>
   <li><a href="/departmentslist">departmentslist</a></li>
   <li><a href="/adddepartment">adddepartment</a></li>
@@ -97,6 +102,5 @@ li a:hover:not(.active) {
     			<input type="submit" class="button" value="Log In"/>
   			</form>
         </div>
-    <p><a href="/">Home</a></p>
   </body>
 </html>
