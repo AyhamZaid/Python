@@ -85,9 +85,9 @@ def getColor():
     print(color[1])
     mycolor.configure(background=color[1])
     
-mycolor = tk.Tk()
+mycolor = Tk()
 mycolor.geometry("100x100") 
-tk.Button(text='Select Color', command=getColor).pack()
+Button(text='Select Color', command=getColor).pack()
 mycolor.eval('tk::PlaceWindow . center')
 
 mycolor.mainloop()
