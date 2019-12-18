@@ -37,8 +37,8 @@ class Empolyee():
 
 
 result = Empolyee(1234312,"AyhamZaid","Amman","Jordan",4423.32,"WebDevelpoer")
-Emp1 = Empolyee(1,"Mohammad Khaled" , "Amman,Jordan" , 500,"Consultant")
-Emp2 = Empolyee(2,"Hala Rana" , "Aqaba,Jordan" , 750,"Manager")
+Emp1 = Empolyee(1,"Mohammad Khaled" , "Amman","Jordan" , 500,"Consultant")
+Emp2 = Empolyee(2,"Hala Rana" , "Aqaba","Jordan" , 750,"Manager")
 
 print(result.getName())
 print(result.getAddress())
