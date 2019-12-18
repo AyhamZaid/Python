@@ -15,7 +15,7 @@ parent = Tk()
 user = StringVar()
 passWord = StringVar()
 def Press():
-    if user.get() == "Orange" and passWord.get() == "CodingAcademy":
+    if user.get() == "Ayham" and passWord.get() == "12345":
         print ("Successful login")
         parent.destroy()
     else:
